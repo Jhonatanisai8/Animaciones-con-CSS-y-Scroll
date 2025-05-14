@@ -1,0 +1,26 @@
+.pulser {
+    width: 100px;
+    height: 100px;
+    background-color: #09f;
+    border-radius: 50%;
+    position: relative;
+    transition-duration: 2s;
+    transition-property: background-color,scale;
+    /* transition-timing-function: steps(100); */
+    /* transition-timing-function: steps(30); */
+    /* transition-timing-function: cubic-bezier(0.56, 0.34, 0, 0.58); */
+    transition-timing-function: ease;
+    transition-delay: 1s;
+}
+
+.pulser:hover {
+    scale: 2;
+    background-color: red;
+    box-shadow: 0 0 10px red;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    min-height: 50vh;
+}
