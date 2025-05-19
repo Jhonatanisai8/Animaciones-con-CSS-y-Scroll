@@ -1,0 +1,45 @@
+/* img {
+    animation: mover;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse; 
+    animation-direction: alternate;
+}
+@keyframes mover{
+    from {
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translatex(200px);
+    }
+} */
+img {
+    animation: mover;
+    animation-duration: 2s;
+    /* animation-iteration-count: initial; */
+    animation-timing-function: linear;
+    /* animation-direction: reverse; */
+    animation-direction: normal;
+
+    /* forwards => se queda al final  */
+    animation-fill-mode: forwards;
+}
+
+img:hover {
+    animation-play-state: paused;
+    opacity: .7;
+    filter: contrast(150%);
+    cursor: progress;
+}
+
+@keyframes mover {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translatex(200px);
+    }
+}
